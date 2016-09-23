@@ -13,9 +13,7 @@ RUN apt-get install -y tar \
                    build-essential
 RUN apt-get install -y python python-dev python-distribute python-pip
 
-
 COPY texlive.profile /tmp/
-
 
 RUN  wget -c http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
   && mkdir texlive \
